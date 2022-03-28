@@ -1,0 +1,43 @@
+1.//Program to put beepers daiagonally in a 5*5 board
+function main(){
+   putBeeper();
+   repeat(4){
+   useBeeper();
+   }
+}
+function useBeeper(){
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+   
+}
+
+2.//Function to Karel Chess Board
+function main(){
+   step1();
+   step2();
+   step1();
+   step2();
+   step1();
+}
+function step1(){ putBeeper();
+   repeat(2){move();
+   move();
+   putBeeper();}
+}
+function step2(){
+repeat(2){ 
+  turnLeft();
+  move();
+}
+putBeeper();
+move();
+move();
+putBeeper();
+repeat(2)
+{  move();
+   turnRight();
+}
+}
